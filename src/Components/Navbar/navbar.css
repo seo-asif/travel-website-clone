@@ -116,3 +116,12 @@
     left: 0;
   }
 }
+
+.toggleNavbar .icon {
+  font-size: 25px;
+  color: var(--whiteColor);
+}
+
+.toggleNavbar .icon:hover {
+  color: var(--PrimaryColor);
+}

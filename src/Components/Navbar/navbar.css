@@ -11,7 +11,7 @@
   --inputColor: hsl(330, 12%, 97%);
 }
 
-.navBarSection .header {
+.header {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@
   z-index: 100;
 }
 
-.logo {
+.logoDiv .logo {
   color: var(--whiteColor);
   font-weight: 500;
   cursor: pointer;
@@ -30,9 +30,10 @@
   justify-content: center;
 }
 
-.icon {
+.logo .icon {
   color: var(--PrimaryColor);
   font-size: 25px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -124,4 +125,9 @@
 
 .toggleNavbar .icon:hover {
   color: var(--PrimaryColor);
+}
+
+.activeHeader {
+  background: rgba(130, 76, 1, 0.936);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
 }

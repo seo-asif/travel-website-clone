@@ -18,9 +18,22 @@ function Navbar() {
     setActive("navBar");
   };
 
+  //code to add background color to header...
+
+  const [transparent, setTransparent] = useState("header");
+  const addBG = () => {
+    if (window.scrollY >= 10) {
+      setTransparent("header activeHeader");
+    } else {
+      setTransparent("header");
+    }
+  };
+
+  window.addEventListener("scroll", addBG);
+
   return (
     <section className="navBarSection">
-      <div className="header">
+      <div className={transparent}>
         <div className="logoDiv">
           <a href="#" className="logo">
             <h2 className="flex">

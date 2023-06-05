@@ -1,0 +1,186 @@
+/* Colors */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 6%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.popular {
+  padding-top: 15rem;
+}
+
+.secHeader {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.textDiv .secTitle {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.textDiv p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+
+.iconsDiv {
+  gap: 0.5rem;
+}
+
+.iconsDiv .icon {
+  padding: 0.5rem;
+  background: var(--greyText);
+  border-radius: 50%;
+  font-size: 2.5rem;
+}
+
+.iconsDiv .icon:hover {
+  background: var(--blackColor);
+  column-rule: var(--whiteColor);
+}
+
+.secHeader .leftIcon {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.secHeader .rightIcon {
+  color: var(--blackColor);
+}
+
+.secHeader .rightIcon:hover {
+  background-color: var(--PrimaryColor);
+}
+
+.secHeader .leftIcon:hover {
+  background-color: var(--PrimaryColor);
+}
+
+.secContainer .mainContent {
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.mainContent .singleDestination {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(138, 138, 138, 0.536);
+}
+
+.destImage {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.destImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlayinfo {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  /* padding: 1rem 1.5rem; */
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.425));
+  bottom: 0;
+  width: 100%;
+  /* height: 10%; */
+  height: 0%;
+
+  overflow: hidden;
+}
+
+.overlayinfo h3 {
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+
+.overlayinfo p {
+  color: var(--whiteColor);
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.overlayinfo .icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.5rem;
+  background: var(--PrimaryColor);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--whiteColor);
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.overlayinfo .icon:hover {
+  negative: var(--blackColor);
+  border: 1px solid var(--PrimaryColor);
+  color: var(--PrimaryColor);
+}
+
+.destImage:hover .overlayinfo {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
+}
+.destFooter {
+  padding: 1rem;
+}
+
+.destFooter .number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blackColor);
+  position: relative;
+  width: max-content;
+  margin: 0;
+}
+
+.destFooter .number::after {
+  content: "";
+  position: absolute;
+  background: var(--PrimaryColor);
+  top: 45%;
+  right: -150%;
+  height: 5px;
+  width: 45px;
+  border-radius: 1rem;
+}
+
+.destFooter .destText {
+  justify-content: space-between;
+}
+
+.destText h6 {
+  color: var(--blackColor);
+  font-size: 15px;
+}
+
+.destFooter .flex {
+  font-size: 16px;
+  font-weight: 600;
+  align-items: flex-start;
+  transform: translateY(5px);
+}
+
+.destFooter .icon {
+  color: var(--PrimaryColor);
+}

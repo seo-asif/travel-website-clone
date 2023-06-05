@@ -24,12 +24,12 @@ function Home() {
           </div>
 
           <div className="distDiv">
-            <label htmlFor="distance">Location</label>
+            <label htmlFor="distance">Area</label>
             <input type="text" placeholder="11/Meters" />
           </div>
 
           <div className="priceDiv">
-            <label htmlFor="price">Location</label>
+            <label htmlFor="price">Price</label>
             <input type="text" placeholder="Dream $140-$500" />
           </div>
 

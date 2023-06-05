@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      {/* <Home></Home>
-      <Popular></Popular>
+      <Home></Home>
+      {/* <Popular></Popular>
       <Offers></Offers>
       <About></About>
       <Blog></Blog>

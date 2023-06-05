@@ -1,7 +1,7 @@
 /* Colors */
 :root {
   --PrimaryColor: hsl(26, 93%, 50%);
-  --HoverColor: hsl(26, 74%, 49%);
+  --HoverColor: hsl(26, 96%, 41%);
   --whiteColor: hsl(0, 6%, 100%);
   --blackColor: hsl(0, 0%, 18%);
   --textColor: hsl(0, 0%, 29%);
@@ -43,19 +43,10 @@
     padding: 1rem;
     width: 100%;
     top: 0;
-    left: 0;
+    left: -500%;
     box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     z-index: 100;
-  }
-  .navLink:hover {
-    color: var(--PrimaryColor);
-  }
-
-  .navLink {
-    color: var(--textColor);
-    font-size: 0.9rem;
-    font-weight: 600;
   }
 
   .navlists {
@@ -71,30 +62,57 @@
     /* on the wide screen padding should be 0 1rem */
   }
 
+  .navLink {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+
   .headerBtns {
     flex-direction: column;
-  }
-  .loginBtn a {
-    color: var(--PrimaryColor);
   }
 
   .btn {
     margin-top: 1rem;
   }
 
-  .btn:hover {
-    background: var(--PrimaryColor);
-  }
-
   .btn a {
     font-weight: 600;
   }
-  .btn a:hover {
-    color: var(--whiteColor);
-  }
+
+  /* .btn a:hover {
+    background: var(--whiteColor);
+  } */
 
   .loginBtn {
     background: none;
     border: 1px solid var(--PrimaryColor);
+  }
+
+  .loginBtn a {
+    color: var(--PrimaryColor);
+  }
+
+  .loginBtn:hover {
+    background: var(--PrimaryColor);
+  }
+
+  .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+
+  .closeNavbar:hover .icon {
+    /* color: var(--PrimaryColor); */
+    color: var(--HoverColor);
+  }
+
+  .activeNavbar {
+    left: 0;
   }
 }

@@ -1,0 +1,133 @@
+/* Colors*/
+/* :root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 96%, 41%);
+  --whiteColor: hsl(0, 6%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(0, 0%, 29%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+} */
+
+.secContainer .mainContent {
+  gap: 1rem;
+}
+
+.singleoffer {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+
+.icon {
+  font-size: 20px;
+  color: var(--textColor);
+}
+
+.small {
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.destImage img {
+  height: 100%;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  border-radius: 3rem;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.offerBody {
+  padding: 1rem;
+}
+
+.price {
+  justify-content: space-between;
+}
+
+.offerBody h4 {
+  color: var(--blackColor);
+  font-size: 700;
+  font-size: 1;
+}
+
+.status {
+  padding: 5px 10px;
+  color: var(--HoverColor);
+  background: var(--greyBg);
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 3rem;
+}
+
+.amenities {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+
+.singleAmenity {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--greyBg);
+  gap: 0.5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--HoverColor);
+  transform: scale(1.01);
+  transition: 0.3 ease;
+}
+
+.singleoffer .icon {
+  color: var(--whiteColor);
+}
+
+.offerBody:hover {
+  transform: translateY(-7px);
+}
+
+.offerBtn {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bsarrowleft {
+  color: var(--whiteColor);
+}
+.btn:hover .bsarrowleft {
+  transform: translateX(10px);
+}

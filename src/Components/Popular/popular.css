@@ -171,3 +171,9 @@
 .destFooter .icon {
   color: var(--PrimaryColor);
 }
+
+@media screen and (min-width: 480px) {
+  .popular {
+    padding-top: 10rem;
+  }
+}

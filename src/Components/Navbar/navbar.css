@@ -118,3 +118,59 @@
   background: rgba(130, 76, 1, 0.936);
   box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
 }
+
+/* =====================Media Queries============== */
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar,
+  .closeNavbar {
+    display: none;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .navlists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .navLink {
+    color: var(--whiteColor);
+    padding: 0 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+
+  .headerBtns .btn {
+    margin-left: 1rem;
+  }
+
+  .headerBtns .btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+  }
+
+  .loginBtn {
+    background: none;
+    border: 1px solid var(--PrimaryColor);
+  }
+
+  .loginBtn:hover {
+    background: var(--PrimaryColor);
+  }
+  .loginBtn:hover a {
+    color: var(--whiteColor);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navItem {
+    padding: 0 0.7rem;
+  }
+}

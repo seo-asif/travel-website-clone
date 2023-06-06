@@ -97,3 +97,14 @@ input::placeholder {
   color: var(--whiteColor);
   font-weight: 600;
 }
+
+ 
+
+@media screen and (min-width: 556px) {
+  .homeText .title {
+    font-size: 2.5rem;
+  }
+  .homeText .subtitle {
+    font-size: 18px;
+  }
+}

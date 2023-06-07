@@ -147,16 +147,17 @@
     color: var(--PrimaryColor);
   }
 
-  .headerBtns .btn {
+  .btn {
     margin-left: 1rem;
   }
 
-  .headerBtns .btn a {
+  .btn a {
     color: var(--whiteColor);
     font-weight: 500;
   }
 
   .loginBtn {
+    margin-right: 1rem !important;
     background: none;
     border: 1px solid var(--PrimaryColor);
   }
@@ -169,8 +170,14 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 960px) {
   .navItem {
     padding: 0 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 8.5rem !important;
   }
 }

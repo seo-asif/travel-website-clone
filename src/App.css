@@ -65,6 +65,9 @@ li {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: var(--HoverColor);
+}
 .btn a {
   color: var(--whiteColor);
   font-weight: 500;
@@ -99,5 +102,18 @@ input {
 @media screen and (min-width: 556px) {
   .mainContent {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 884px) {
+  .mainContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 70% !important;
+    margin: auto !important;
   }
 }

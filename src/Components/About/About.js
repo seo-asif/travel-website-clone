@@ -5,7 +5,7 @@ import "./about.css";
 import climbing from "../../Assets/hikings.png";
 import mountain from "../../Assets/climbing.png";
 import customer from "../../Assets/customer.png";
-import img from "../../Assets/bgHome.png"
+import img from "../../Assets/bgHome.png";
 import video from "../../Assets/videoplayback.webm";
 
 function About() {
@@ -44,25 +44,18 @@ function About() {
               desires. Trust us to unlock the world's wonders.
             </p>
           </div>
-
-          <div className="videoCard container">
-            <div className="cardContent grid">
-              <div className="cardText">
-                <h2>Wonderful House experience in there!</h2>
-                <p>
-                  the adventure subranking is based on an equally weighted
-                  average of scores from five country.
-                </p>
-              </div>
-              <div className="cardVideo">
-                <video
-                  src={video}
-                  autoPlay
-                  loop
-                  muted
-                  type="video/webm"
-                ></video>
-              </div>
+        </div>
+        <div className="videoCard container">
+          <div className="cardContent grid">
+            <div className="cardText">
+              <h2>Wonderful House experience in there!</h2>
+              <p>
+                the adventure subranking is based on an equally weighted average
+                of scores from five country.
+              </p>
+            </div>
+            <div className="cardVideo">
+              <video src={video} autoPlay loop muted type="video/webm"></video>
             </div>
           </div>
         </div>

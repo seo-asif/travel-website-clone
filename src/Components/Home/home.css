@@ -13,18 +13,18 @@
   position: relative;
 }
 
-.secContainer .homeText {
+.homeText {
   text-align: center;
 }
 
-.homeText .title {
+.title {
   color: var(--whiteColor);
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.5rem;
 }
 
-.homeText .subtitle {
+.subtitle {
   color: var(--whiteColor);
   opacity: 0.9;
   font-size: 13px;
@@ -44,8 +44,7 @@
   background: var(--HoverColor);
   border: 1px solid black;
 }
-
-.secContainer .homeCard {
+.homeCard {
   width: 80%;
   border-radius: 1rem;
   padding: 2rem;
@@ -98,13 +97,36 @@ input::placeholder {
   font-weight: 600;
 }
 
- 
-
 @media screen and (min-width: 556px) {
-  .homeText .title {
+  .title {
     font-size: 2.5rem;
   }
-  .homeText .subtitle {
+  .subtitle {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .homeText {
+    padding: 1rem 10rem;
+  }
+  .title {
+    font-size: 3.5rem;
+    margin: auto;
+    line-height: 4rem;
+  }
+
+  .subtitle {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .homeCard {
+    width: 70%;
   }
 }

@@ -18,8 +18,8 @@ const Offer = [
     id: "1",
     imgSrc: img5,
     stTdeitle: "Machu Picchu",
-    location: "Peru",
-    grade: "CULTURAL RELAX",
+    location: "China",
+
     price: "$7,452",
   },
 
@@ -28,7 +28,7 @@ const Offer = [
     imgSrc: img6,
     stTdeitle: "Guanajuato",
     location: "Mexico",
-    grade: "CULTURAL RELAX",
+
     price: "$2,452",
   },
 
@@ -37,7 +37,7 @@ const Offer = [
     imgSrc: img7,
     stTdeitle: "Angkor Wat",
     location: "Combodia",
-    grade: "CULTURAL RELAX",
+
     price: "$4,400",
   },
 ];
@@ -94,7 +94,7 @@ function Offers() {
 
                   <div className="location flex"></div>
                   <MdLocationOn className="icon" />
-                  <small>450 lorem #310, {location}</small>
+                  <small> {location}</small>
                 </div>
 
                 <div className="flex OfferBtn">
